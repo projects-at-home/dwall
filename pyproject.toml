@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dwall"
+version = "0.1.0"
+description = "Dynamic wallpaper generator from .heic files"
+license = "GPL-3.0"
+authors = ["Melih DARCAN"] # "John Smith <johnsmith@example.org>"
+# maintainers = ["Melih DARCAN"] # "John Smith <johnsmith@example.org>"
+readme = "README.md"
+homepage = "https://melihdarcan.xyz/projects/dwall/"
+repository = "https://github.com/projects-at-home/dwall"
+# documentation = "https://python-poetry.org/docs/"
+keywords = ["dynamic", "wallpaper", "wayland", "xorg"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyheif = "^0.7.1"
+Pillow = "^9.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# [tool.poetry.scripts]
+# Here, we will have the my_package_cli script installed
+# which will execute the run function in the console module in the my_package package.
+# my_package_cli = 'my_package.console:run'
